@@ -1,0 +1,111 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-8">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_name##}" maxlength="200" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::makeYearTitle##}">{##&modulSelect::makeYearTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-2">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_makeYear##}" width="5" maxlength="4" size="4" id="x_makeYear" name="x_makeYear">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##&modulSelect::rateNumberTitle##}">{##&modulSelect::rateNumberTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-2">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" value="{##@modulSelect::x_rateNumber##}" maxlength="4" size="4" id="x_rateNumber" name="x_rateNumber">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" class="col-sm-3">
+		<label title="{##@modulSelect::watchWhenLabel##}">{##&modulSelect::watchWhenTitle##}</label>
+	</div>
+	<div id="itemView" class="col-sm-4">
+		<input {##&modulSelect::readonly##} type="text" class="form-control" id="x_watchWhen" name="x_watchWhen" size="20" maxlength="20" value="{##@modulSelect::x_watchWhen##}">
+	</div>
+	<div id="itemView" class="col-sm-1">
+		<button {##&modulSelect::disabled##} class='buttonBox' class="form-control" title='Most' id="watchWhen" name='watchWhen' type='button' value='Most'>
+			<span data-caption='Most' class='glyphicon glyphicon-time' data-phrase='None'></span>
+		</button>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{##&modulSelect::storyTitle##}">{##&modulSelect::storyTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="5" cols="95" id="x_story" name="x_story">{##@modulSelect::x_story##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<video_x_description>
+	<div id="itemLineTitle">
+		<label title="{##&modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="5" cols="95" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</video_x_description>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" class="col-sm-4">{##@modulSelect::nameTitle##}</div>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::makeYearTitle##}</div>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::rateNumberTitle##}</div>
+<{##modulSelect##}_x_insertWhen>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::insertWhenTitle##}</div>
+</{##modulSelect##}_x_insertWhen>
+	<div id="itemView" class="col-sm-3"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" class="col-sm-4">{##@modulSelect::x_name##}</div>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::x_makeYear##}</div>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::x_rateNumber##}</div>
+<{##modulSelect##}_x_insertWhen>
+	<div id="itemView" class="col-sm-2">{##@modulSelect::x_insertWhen##}</div>
+</{##modulSelect##}_x_insertWhen>
+	<div id="itemViewRight" class="col-sm-3">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: ;"></div>
+<video_x_description>
+	</{##modulSelect##}::_x_insertWhen>
+	<div id="itemViewDescription" class="col-sm-12">
+		{##@modulSelect::x_description##}
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</video_x_description>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::makeYearTitle##}">{##&modulSelect::makeYearTitle##}</label><br>
+	<select class="form-control" id="s_makeYear_filter" name="s_makeYear_filter" onfocusout="this.form.submit();">
+		{##@modulSelect::s_makeYear_filter##}
+	</select><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_makeYear##}" maxlength="10" size="10" id="s_makeYear" name="s_makeYear" onfocusout="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::rateNumberTitle##}">{##&modulSelect::rateNumberTitle##}</label><br>
+	<select class="form-control" id="s_rateNumber_filter" name="s_rateNumber_filter" onchange="this.form.submit();">
+		{##@modulSelect::s_rateNumber_filter##}
+	</select><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_rateNumber##}" maxlength="10" size="10" id="s_rateNumber" name="s_rateNumber" onchange="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::insertUserIDTitle##}">{##&modulSelect::insertUserIDTitle##}</label><br>
+	<!-- select id="s_insertUserID_filter" name="s_insertUserID_filter" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID_filter##}
+	</select><br -->
+	<select class="form-control" style="width:150px;" id="s_insertUserID" name="s_insertUserID" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID##}
+	</select>
+</div>
+##/listFilterForm##

@@ -1,0 +1,118 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+<training_x_training_topicID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::training_topicIDTitle##}">{##&modulSelect::training_topicIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select class="form-control" style="width:150px;" id="x_training_topicID" name="x_training_topicID">{##@modulSelect::x_training_topicID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</training_x_training_mopicID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input class="form-control" type="text" value="{##@modulSelect::x_name##}" maxlength="10" size="10" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::runTimeTitle##}">{##&modulSelect::runTimeTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input class="form-control" type="text" value="{##@modulSelect::x_runTime##}" maxlength="10" size="10" id="x_runTime" name="x_runTime">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::distanceTitle##}">{##&modulSelect::distanceTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input class="form-control" type="text" value="{##@modulSelect::x_distance##}" maxlength="10" size="10" id="x_distance" name="x_distance">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::kcalTitle##}">{##&modulSelect::kcalTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input class="form-control" type="text" value="{##@modulSelect::x_kcal##}" maxlength="10" size="10" id="x_kcal" name="x_kcal">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<training_x_description>
+	<div id="itemLineTitle">
+		<label title="{##&modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="5" cols="95" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</training_x_description>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:160px;">{##@modulSelect::training_topicNameTitle##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::nameTitle##}</div>
+	<div id="itemView" style="width:60px;">{##@modulSelect::runTimeTitle##}</div>
+	<div id="itemView" style="width:60px;">{##@modulSelect::distanceTitle##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::kcalTitle##}</div>
+<training_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::insertWhenTitle##}</div>
+</training_x_insertWhen>
+	<div id="itemView" style="float:left;width:180px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:160px;">{##@modulSelect::x_training_topicName##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::x_name##}</div>
+	<div id="itemView" style="width:60px;">{##@modulSelect::x_runTime##}</div>
+	<div id="itemView" style="width:60px;">{##@modulSelect::x_distance##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::x_kcal##}</div>
+<training_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::x_insertWhen##}</div>
+</training_x_insertWhen>
+	<div id="itemViewRight" style="float:left;width:180px;">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::training_topicIDTitle##}">{##&modulSelect::training_topicIDTitle##}</label><br>
+	<select class="form-control"  style="width:150px;" id="s_training_topicID" name="s_training_topicID" onchange="this.form.submit();">
+		{##@modulSelect::s_training_topicID##}
+	</select>
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_name##}" maxlength="10" size="10" id="s_name" name="s_name" onchange="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::runTimeTitle##}">{##&modulSelect::runTimeTitle##}</label><br>
+	<select class="form-control" id="s_runTime_filter" name="s_runTime_filter" onfocusout="this.form.submit();">
+		{##@modulSelect::s_runTime_filter##}
+	</select><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_runTime##}" maxlength="10" size="10" id="s_runTime" name="s_runTime" onfocusout="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::distanceTitle##}">{##&modulSelect::distanceTitle##}</label><br>
+	<select class="form-control" id="s_distance_filter" name="s_distance_filter" onfocusout="this.form.submit();">
+		{##@modulSelect::s_distance_filter##}
+	</select><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_distance##}" maxlength="10" size="10" id="s_distance" name="s_distance" onfocusout="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::kcalTitle##}">{##&modulSelect::kcalTitle##}</label><br>
+	<select class="form-control" id="s_kcal_filter" name="s_kcal_filter" onfocusout="this.form.submit();">
+		{##@modulSelect::s_kcal_filter##}
+	</select><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_kcal##}" maxlength="10" size="10" id="s_kcal" name="s_kcal" onfocusout="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::insertUserIDTitle##}">{##&modulSelect::insertUserIDTitle##}</label><br>
+	<select class="form-control" style="width:150px;" id="s_insertUserID" name="s_insertUserID" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID##}
+	</select>
+</div>
+##/listFilterForm##

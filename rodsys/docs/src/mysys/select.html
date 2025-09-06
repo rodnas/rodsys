@@ -1,0 +1,47 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<div class="input-group">
+	<div class="input-group-btn search-panel">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept"></span> <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i> All Category</a></li>
+                            <li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i> IT Solutions</a></li>
+                            <li><a href="#"><i class="fa fa-paint-brush" aria-hidden="true"></i> Design &amp; Multimedia</a></li>
+                            <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Social Media &amp; Marketing</a></li>
+                            <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education &amp; Training</a></li>
+                            <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Writing &amp; Translation</a></li>
+                            <li><a href="#"><i class="fa fa-gavel" aria-hidden="true"></i> Legal Affairs</a></li>
+                            <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i> Finance &amp; Accounting</a></li>
+                            <li><a href="#"><i class="fa fa-building-o" aria-hidden="true"></i> Construction &amp; Architecture</a></li>
+                            <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i> Sales</a></li>
+                            <li><a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i> Photography &amp; Event</a></li>
+                            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Household</a></li>
+                            <li><a href="#"><i class="fa fa-arrows" aria-hidden="true"></i> Rest of All</a></li>
+                          </ul>
+                      </div>
+                      <input type="hidden" name="search_param" value="all" id="search_param">         
+                      <input type="text" class="form-control" name="x" placeholder="Enter search keyword here" [(ngModel)] = 'title'>
+                      <span class="input-group-btn">
+                          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" (click) = "searchParams(optradio,location,payType,title)" ></span></button>
+                      </span>
+</div>
+
+<i class="glyphicon glyphicon-comment"></i>
+
+<div class="form-control input-group" style="width:36px;height:20px;padding:0;margin:0;">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		<span id="search_concept"></span> <span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="glyphicon glyphicon-comment" aria-hidden="true"></i></a></li>
+	</ul>
+</div>

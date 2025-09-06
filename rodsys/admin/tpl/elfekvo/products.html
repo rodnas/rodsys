@@ -1,0 +1,248 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::productIdLabel##}">{##&modulSelect::productIdTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_productId##}" maxlength="12" size="12" id="x_productId" name="x_productId">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameLabel##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_name##}" maxlength="50" size="50" id="x_name" name="x_name">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::descriptionPublicLabel##}">{##&modulSelect::descriptionPublicTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_descriptionPublic##}" maxlength="100" size="80" id="x_descriptionPublic" name="x_descriptionPublic">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::descriptionPrivateLabel##}">{##&modulSelect::descriptionPrivateTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_descriptionPrivate##}" maxlength="100" size="80" id="x_descriptionPrivate" name="x_descriptionPrivate">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_storageWhere>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::storageWhere##}">{##&modulSelect::storageWhereTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_storageWhere##}" maxlength="25" size="25" id="x_storageWhere" name="x_storageWhere">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_storageWhere>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::quantityLabel##}">{##&modulSelect::quantityTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_quantity##}" maxlength="10" size="10" id="x_quantity" name="x_quantity">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::priceLabel##}">{##&modulSelect::priceTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_price##}" maxlength="20" size="20" id="x_price" name="x_price">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::makeWhoLabel##}">{##&modulSelect::makeWhoTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_makeWho##}" maxlength="12" size="12" id="x_makeWho" name="x_makeWho">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::makeTypeLabel##}">{##&modulSelect::makeTypeTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" value="{##@modulSelect::x_makeType##}" maxlength="12" size="12" id="x_makeType" name="x_makeType">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::products_statusIDLabel##}">{##&modulSelect::products_statusIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:150px;" id="x_products_statusID" name="x_products_statusID">{##@modulSelect::x_products_statusID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##viewForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::productIdLabel##}">{##&modulSelect::productIdTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_productId##}"</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::nameLabel##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_name##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::descriptionPublicLabel##}">{##&modulSelect::descriptionPublicTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_descriptionPublic##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_descriptionPrivate>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::descriptionPrivateLabel##}">{##&modulSelect::descriptionPrivateTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_descriptionPrivate##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_descriptionPrivate>
+	<{##modulSelect##}_x_storageWhere>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::storageWhere##}">{##&modulSelect::storageWhereTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_storageWhere##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_storageWhere>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::quantityLabel##}">{##&modulSelect::quantityTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_quantity##}"</div>
+	<div style="clear:both;height: 1px;"></div>
+	<{##modulSelect##}_x_updateWhen>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::updateWhenLabel##}">{##&modulSelect::updateWhenTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_updateWhen##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_updateWhen>
+	<{##modulSelect##}_x_price>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::priceLabel##}">{##&modulSelect::priceTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_price##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	</{##modulSelect##}_x_price>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::makeWhoLabel##}">{##&modulSelect::makeWhoTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_makeWho##}</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::makeTypeLabel##}">{##&modulSelect::makeTypeTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_makeType##}</div>
+	<div style="clear:both;height: 1px;"></div>
+<{##modulSelect##}_x_insertUserID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::core_usersIDLabel##}">{##&modulSelect::core_usersIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_insertUserID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</{##modulSelect##}_x_insertUserID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::products_statusIDLabel##}">{##&modulSelect::products_statusIDTitle##}</label>
+	</div>
+	<div id="itemView">{##@modulSelect::x_products_statusID##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/viewForm##
+##importForm##
+<div id="contentFrame"{##marginLeft##}>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::importNameLabel##}">{##&modulSelect::importNameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="text" name="x_importName" id="x_importName" size="62" maxlength="100" value="{##@modulSelect::x_importName##}">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##@modulSelect::fileNameLabel##}">{##&modulSelect::fileNameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input type="file" name="x_fileName" id="x_fileName" size="62" maxlength="100" value="">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemLineTitle">
+		<label title="{##@modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div style="float:center;text-align:center">
+		<textarea style="border: 1px solid #999999;" rows="4" cols="80" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/importForm##
+##listHeadForm##
+<div id="listHeader">
+	<div style="clear:both;"></div>
+	<div id="itemView" style="width:90px;"><b>{##@modulSelect::productIdTitle##}</b></div>
+	<div id="itemView" style="width:300px;"><b>{##@modulSelect::nameTitle##}</b></div>
+	<div id="itemView" style="width:100px;">{##@modulSelect::products_statusIDTitle##}</div>
+<{##modulSelect##}_x_insertUserID>
+	<div id="itemView" style="width:100px;padding-left:20px;">{##@modulSelect::core_usersIDTitle##}</div>
+</{##modulSelect##}_x_insertUserID>
+<{##modulSelect##}_x_storageWhere>
+	<div id="itemView" style="width:80px;"><b>{##@modulSelect::storageWhereTitle##}</b></div>
+</{##modulSelect##}_x_storageWhere>
+	<div id="itemView" style="width:100px;"><b>{##@modulSelect::quantityTitle##}</b></div>
+<{##modulSelect##}_x_price>
+	<div id="itemView" style="width:100px;"><b>{##@modulSelect::priceTitle##}</b></div>
+</{##modulSelect##}_x_price>
+	<div id="itemView" style="width:100px;"><b>{##@modulSelect::makeWhoTitle##}</b></div>
+	<div id="itemView" style="width:100px;"><b>{##@modulSelect::makeTypeTitle##}</b></div>
+	<!-- div id="itemView" style="width:120px;">{##@modulSelect::insertWhenTitle##}</div -->
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div style="float:left;">
+		<div style="clear:both;"></div>
+		<div id="itemView" style="width:90px;"><b>{##@modulSelect::x_productId##}</b></div>
+		<div id="itemView" style="width:300px;"><b>{##@modulSelect::x_name##}</b></div>
+		<div id="itemView" style="width:100px;"><b>{##@modulSelect::x_products_status##}</b></div>
+<{##modulSelect##}_x_insertUserID>
+		<div id="itemView" style="width:100px;"><b>{##@modulSelect::x_core_users##}&nbsp;</b></div>
+</{##modulSelect##}_x_insertUserID>
+<{##modulSelect##}_x_storageWhere>
+		<div id="itemView" style="width:80px;"><b>{##@modulSelect::x_storageWhere##}</b></div>
+</{##modulSelect##}_x_storageWhere>
+		<div id="itemView" style="width:100px;"><b>{##@modulSelect::x_quantity##}</b></div>
+<{##modulSelect##}_x_price>
+		<div id="itemView" style="width:100px;"><b>{##@modulSelect::x_price##}</b></div>
+</{##modulSelect##}_x_price>
+		<div id="itemView" style="width:100px;"><b>{##@modulSelect::x_makeWho##}</b></div>
+		<div id="itemView" style="width:100px;"><b>{##@modulSelect::x_makeType##}</b></div>
+		<!-- div id="itemView" style="width:120px;">{##@modulSelect::x_insertWhen##}</div -->
+	</div>
+	<div style="float:right;">
+		<div class="{##@modulSelect::bgcolor##} itemViewRight">{##@modulSelect::x_submenu##}</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##
+##listFilterForm##
+<{##modulSelect##}_x_insertUserID>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::core_usersIDTitle##}">{##&modulSelect::core_usersIDTitle##}</label><br>
+	<select class="form-control" style="width:120px;" id="s_insertUserID" name="s_insertUserID" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID##}
+	</select>
+</div>
+</{##modulSelect##}_x_insertUserID>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::products_statusIDTitle##}">{##&modulSelect::products_statusIDTitle##}</label><br>
+	<select class="form-control" style="width:120px;" id="s_products_statusID" name="s_products_statusID" onchange="this.form.submit();">
+		{##@modulSelect::s_products_statusID##}
+	</select>
+</div>
+<{##modulSelect##}_x_own>
+<div id="searchFilterTitle">
+	<label title="{##&modulSelect::ownTitle##}">{##&modulSelect::ownTitle##}</label><br>
+	<INPUT class="form-control" name="s_own" id="s_own" TYPE="checkbox" value="1" {##@itemValues::s_own##} onchange="this.form.submit();">
+</div>
+</{##modulSelect##}_x_own>
+##/listFilterForm##

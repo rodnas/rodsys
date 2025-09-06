@@ -1,0 +1,160 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_name" size="62" maxlength="100" value="{##@modulSelect::x_name##}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::zipcodeTitle##}">{##&modulSelect::zipcodeTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_zipcode" size="5" maxlength="5" value="{##@modulSelect::x_zipcode##}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::settlementTitle##}">{##&modulSelect::settlementTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_settlement" size="42" maxlength="100" value="{##@modulSelect::x_settlement##}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:110px;">
+		<label title="{##&modulSelect::addressTitle##}">{##&modulSelect::addressTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_address" size="62" maxlength="100" value="{##@modulSelect::x_address##}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::contactNameTitle##}">{##&modulSelect::contactNameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_contactName" size="62" maxlength="100" value="{##@modulSelect::x_contactName##}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:80px;">
+		<label title="{##&modulSelect::phoneTitle##}">{##&modulSelect::phoneTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_phone" size="20" maxlength="20" value="{##@modulSelect::x_phone##}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{##&modulSelect::faxTitle##}">{##&modulSelect::faxTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_fax" size="20" maxlength="20" value="{##@modulSelect::x_fax##}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[##&modulSelect::mobileTitle##}">{##&modulSelect::mobileTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_mobile" size="20" maxlength="20" value="{##@modulSelect::x_mobile##}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advertiser_emailTitle]}">{$config[advertiser_emailTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_email" size="40" maxlength="55" value="{$config[advertiser_x_email]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advertiser_websiteTitle]}">{$config[advertiser_websiteTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_website" size="40" maxlength="55" value="{$config[advertiser_x_website]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advertiser_activateWhenTitle]}">{$config[advertiser_activateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" id="x_activateWhen" name="x_activateWhen" size="20" maxlength="" value="{$config[advertiser_x_activateWhen]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advertiser_deactivateWhenTitle]}">{$config[advertiser_deactivateWhenTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" id="x_deactivateWhen" name="x_deactivateWhen" size="20" maxlength="" value="{$config[advertiser_x_deactivateWhen]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advertiser_playMaxNumTitle]}">{$config[advertiser_playMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_playMaxNum" size="20" maxlength="20" value="{$config[advertiser_x_playMaxNum]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advertiser_playCounterTitle]}">{$config[advertiser_playCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_playCounter" size="20" maxlength="20" value="{$config[advertiser_x_playCounter]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advertiser_clickMaxNumTitle]}">{$config[advertiser_clickMaxNumTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_clickMaxNum" size="20" maxlength="20" value="{$config[advertiser_x_clickMaxNum]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advertiser_clickCounterTitle]}">{$config[advertiser_clickCounterTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_clickCounter" size="20" maxlength="20" value="{$config[advertiser_x_clickCounter]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advertiser_priceMaxTitle]}">{$config[advertiser_priceMaxTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_priceMax" size="20" maxlength="20" value="{$config[advertiser_x_priceMax]}">&nbsp;
+	</div>
+	<div id="itemTitle" style="width:60px;">
+		<label title="{$config[advertiser_priceActualTitle]}">{$config[advertiser_priceActualTitle]}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_priceActual" size="20" maxlength="20" value="{$config[advertiser_x_priceActual]}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<advertiser_x_description>
+	<div id="itemLineTitle">
+		<label title="{$config[advertiser_descriptionTitle]}">{$config[advertiser_descriptionTitle]}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div valign="center" style="background:white;">
+		<textarea id="x_description" name="x_description">{$config[advertiser_x_description]}</textarea>
+		<script language="javascript1.2" type="text/javascript">generate_wysiwyg("x_description",740,200);</script>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advertiser_x_description>
+<advertiser_x_langID>
+	<div id="itemTitle" style="width:150px;">
+		<label title="{$config[advertiser_langTitle]}">{$config[advertiser_langTitle]}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{$config[advertiser_lang]}</select></span>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</advertiser_x_langID>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{##@modulSelect::nameTitle##}</div>
+	<div id="itemView" style="width:200px;">{##@modulSelect::insertWhenTitle##}</div>
+	<div id="itemView" style="width:70px;">{##@modulSelect::langTitle##}</div>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_name##}</div>
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_insertWhen##}</div>
+	<div id="itemView" style="width:70px;">{##@modulSelect::x_lang##}</div>
+	<div id="itemViewRight" style="width:170px;">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

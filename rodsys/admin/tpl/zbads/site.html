@@ -1,0 +1,57 @@
+##inputForm##
+<div id="contentFrame">
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::nameTitle##}">{##&modulSelect::nameTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_name" size="62" maxlength="100" value="{##@modulSelect::x_name##}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::wwwAddressTitle##}">{##&modulSelect::wwwAddressTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input {##&modulSelect::readonly##} class="form-control" type="text" name="x_wwwAddress" size="62" maxlength="100" value="{##@modulSelect::x_wwwAddress##}">&nbsp;
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+<site_x_description>
+	<div id="itemLineTitle">
+		<label title="{##&modulSelect::descriptionTitle##}">{##&modulSelect::descriptionTitle##}</label>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div class="col-sm-12">
+		<textarea {##&modulSelect::readonly##} class="form-control" style="border: 1px solid #999999;" rows="5" cols="95" id="x_description" name="x_description">{##@modulSelect::x_description##}</textarea>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</site_x_description>
+<site_x_langID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::langTitle##}">{##&modulSelect::langTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select style="width:50;" name="x_langID">{##@modulSelect::x_lang##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</site_x_langID>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:200px;">{##@modulSelect::nameTitle##}</div>
+	<div id="itemView" style="width:200px;">{##@modulSelect::wwwAddressTitle##}</div>
+	<div id="itemView" style="width:200px;">{##@modulSelect::insertWhenTitle##}</div>
+	<div id="itemView" style="width:70px;">{##@modulSelect::langTitle##}</div>
+	<div id="itemView" style="width:170px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_name##}</div>
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_wwwAddress##}</div>
+	<div id="itemView" style="width:200px;">{##@modulSelect::x_insertWhen##}</div>
+	<div id="itemView" style="width:70px;">{##@modulSelect::x_lang##}</div>
+	<div id="itemViewRight" style="width:170px;">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##

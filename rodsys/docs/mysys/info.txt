@@ -1,0 +1,29 @@
+step:
+step
+calories
+distance
+activity
+
+heartrate:
+heartrate
+max heartrate
+
+
+bload oxgygen:
+minimum
+maximum
+
+Sleep:
+total duration
+revival times
+deap sleep
+shallow sleep
+start time
+end time
+
+walking:
+distance
+calories
+time
+avg pace
+avarage heartrate avarage max

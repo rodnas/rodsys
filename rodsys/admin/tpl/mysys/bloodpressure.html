@@ -1,0 +1,70 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::systoleTitle##}">{##&modulSelect::systoleTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input class="form-control"  type="text" value="{##@modulSelect::x_systole##}" maxlength="4" size="4" id="x_systole" name="x_systole">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::asystoleTitle##}">{##&modulSelect::asystoleTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input class="form-control"  type="text" value="{##@modulSelect::x_asystole##}" maxlength="4" size="4" id="x_asystole" name="x_asystole">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::pulseTitle##}">{##&modulSelect::pulseTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input class="form-control"  type="text" value="{##@modulSelect::x_pulse##}" maxlength="4" size="4" id="x_pulse" name="x_pulse">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</bloodpressure_x_description>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:80px;">{##@modulSelect::systoleTitle##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::asystoleTitle##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::pulseTitle##}</div>
+<bloodpressure_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::insertWhenTitle##}</div>
+</bloodpressure_x_insertWhen>
+	<div id="itemView" style="width:180px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:80px;">{##@modulSelect::x_systole##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::x_asystole##}</div>
+	<div id="itemView" style="width:80px;">{##@modulSelect::x_pulse##}</div>
+<bloodpressure_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::x_insertWhen##}</div>
+</bloodpressure_x_insertWhen>
+	<div id="itemViewRight" style="float:left;width:180px;">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::systoleTitle##}">{##&modulSelect::systoleTitle##}</label><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_systole##}" maxlength="4" size="4" id="s_systole" name="s_systole" onchange="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::asystoleTitle##}">{##&modulSelect::asystoleTitle##}</label><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_asystole##}" maxlength="4" size="4" id="s_asystole" name="s_asystole" onchange="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::pulseTitle##}">{##&modulSelect::pulseTitle##}</label><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_pulse##}" maxlength="4" size="4" id="s_pulse" name="s_pulse" onchange="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::insertUserIDTitle##}">{##&modulSelect::insertUserIDTitle##}</label><br>
+	<select class="form-control" style="width:150px;" id="s_insertUserID" name="s_insertUserID" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID##}
+	</select>
+</div>
+##/listFilterForm##

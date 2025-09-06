@@ -1,0 +1,60 @@
+##inputForm##
+<div id="contentFrame"{$config[marginLeft]}>
+<medicine_x_medicine_topicID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::medicine_topicIDTitle##}">{##&modulSelect::medicine_topicIDTitle##}</label>
+	</div>
+	<div id="itemView">
+		<select class="form-control" style="width:150px;" id="x_medicine_topicID" name="x_medicine_topicID">{##@modulSelect::x_medicine_topicID##}</select>
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</medicine_x_medicine_topicID>
+	<div id="itemTitle" style="width:100px;">
+		<label title="{##&modulSelect::quantityTitle##}">{##&modulSelect::quantityTitle##}</label>
+	</div>
+	<div id="itemView">
+		<input class="form-control" type="text" value="{##@modulSelect::x_quantity##}" maxlength="10" size="10" id="x_quantity" name="x_quantity">
+	</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/inputForm##
+##listHeadForm##
+<div id="listHeader">
+	<div id="itemView" style="width:160px;">{##@modulSelect::medicine_topicNameTitle##}</div>
+	<div id="itemView" style="width:100px;">{##@modulSelect::quantityTitle##}</div>
+<medicine_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::insertWhenTitle##}</div>
+</medicine_x_insertWhen>
+	<div id="itemView" style="float:left;width:180px;"></div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listHeadForm##
+##listItemForm##
+<div id="listItem" class="{##@modulSelect::bgcolor##}">
+	<div id="itemView" style="width:160px;">{##@modulSelect::x_medicine_topicName##}</div>
+	<div id="itemView" style="width:100px;">{##@modulSelect::x_quantity##}</div>
+<medicine_x_insertWhen>
+	<div id="itemView" style="width:120px;">{##@modulSelect::x_insertWhen##}</div>
+</medicine_x_insertWhen>
+	<div id="itemViewRight" style="float:left;width:180px;">{##@modulSelect::x_submenu##}</div>
+	<div style="clear:both;height: 1px;"></div>
+</div>
+##/listItemForm##
+##listFilterForm##
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::quantityTitle##}">{##&modulSelect::quantityTitle##}</label><br>
+	<input class="form-control" type="text" value="{##@modulSelect::s_quantity##}" maxlength="10" size="10" id="s_quantity" name="s_quantity" onchange="this.form.submit();">
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::medicine_topicIDTitle##}">{##&modulSelect::medicine_topicIDTitle##}</label><br>
+	<select class="form-control" style="width:150px;" id="s_medicine_topicID" name="s_medicine_topicID" onchange="this.form.submit();">
+		{##@modulSelect::s_medicine_topicID##}
+	</select>
+</div>
+<div id="searchFilterTitle">
+	<label title="{##@modulSelect::insertUserIDTitle##}">{##&modulSelect::insertUserIDTitle##}</label><br>
+	<select class="form-control" style="width:150px;" id="s_insertUserID" name="s_insertUserID" onchange="this.form.submit();">
+		{##@modulSelect::s_insertUserID##}
+	</select>
+</div>
+##/listFilterForm##
